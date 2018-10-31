@@ -7,3 +7,23 @@ console.log(m.addition());
 console.log(m.subtraction());
 console.log(m.multiplication());
 console.log(m.division());
+
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>Hello, World!</div>
+    )
+  }
+}
+
+ReactDOM.render (
+  <App/>,
+  document.getElementById('root')
+);
