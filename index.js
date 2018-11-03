@@ -2,23 +2,21 @@ import Operation from './src/operation';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-console.log('Hello, World!');
-
-const m = new Operation(10, 2);
-
-console.log(m.addition());
-console.log(m.subtraction());
-console.log(m.multiplication());
-console.log(m.division());
-
 class App extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
+    const m = new Operation(10,2)
+
     return (
-      <div>Hello, World!</div>
+      <div>
+        <p>Addition: { m.addition() }</p>
+        <p>Subtraction: { m.subtraction() }</p>
+        <p>Multiplication: { m.multiplication() }</p>
+        <p>Division: { m.division() }</p>
+      </div>
     )
   }
 }
